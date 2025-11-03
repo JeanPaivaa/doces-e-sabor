@@ -1,0 +1,97 @@
+body{
+      margin: 0;
+}
+.about-page {
+  text-align: center;
+  padding: 12px 20px;
+  background-color: #491019;
+  margin: 0;
+}
+
+.about-page h2 {
+  color: #b8914c;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.about-page .intro {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+/* Contêiner com duas colunas */
+.team-two-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Cada coluna */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Card de pessoa */
+.team-card {
+  background-color: #d9c8b4;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+.team-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.team-card h3 {
+  color: #3b0a0a;
+  margin-bottom: 8px;
+}
+
+.team-card p {
+  color: #5a2a2a;
+  font-size: 0.95em;
+}
+
+/* Botão voltar */
+.voltar {
+  margin-top: 60px;
+}
+
+.voltar .btn {
+  background-color: #3b0a0a;
+  color: #f0d28d;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.voltar .btn:hover {
+  background-color: #7a1b1b;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .team-two-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
